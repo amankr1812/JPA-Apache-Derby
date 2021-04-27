@@ -13,7 +13,7 @@ public class UserController
 {    
 @Autowired    
 private UserService userService;     
-@RequestMapping("/")    
+@RequestMapping("/getalluser")    
 public List<UserRecord> getAllUser()  
 {    
 return userService.getAllUsers();    
@@ -21,7 +21,7 @@ return userService.getAllUsers();
 @RequestMapping(value="/adduser", method=RequestMethod.POST)    
 public void addUser(@RequestBody UserRecord userRecord)  
 {    
-	System.out.println("here 2-----------------------------------------------------------------");
+	
 userService.addUser(userRecord);    
 }       
 }    

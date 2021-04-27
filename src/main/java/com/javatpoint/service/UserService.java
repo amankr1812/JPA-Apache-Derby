@@ -19,7 +19,6 @@ return userRecords;
 }    
 public void addUser(UserRecord userRecord)  
 {  
-	System.out.println("here-----------------------------------------------------------------");
 userRepository.save(userRecord);    
 }    
 }    
