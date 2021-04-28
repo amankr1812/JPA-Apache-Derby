@@ -20,5 +20,8 @@ return userRecords;
 public void addUser(UserRecord userRecord)  
 {  
 userRepository.save(userRecord);    
-}    
+} 
+public void deleteUser(int id) {
+	userRepository.deleteById(id);
+}
 }    
